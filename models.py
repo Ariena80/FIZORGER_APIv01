@@ -12,7 +12,7 @@ class User(db.Model):
     patronymic = Column(String(50), nullable=True)
     login = Column(String(7), nullable=False)
     password = Column(String, nullable=False)
-    image = Column(LargeBinary, nullable=False)
+    image = Column(LargeBinary, nullable=True)
 
 class Command(db.Model):
     __tablename__ = 'Command'
